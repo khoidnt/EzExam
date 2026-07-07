@@ -1,0 +1,5 @@
+﻿CREATE TABLE Exams
+(
+    ExamID INT IDENTITY(1,1) PRIMARY KEY,
+    ExamName NVARCHAR(100)
+);
