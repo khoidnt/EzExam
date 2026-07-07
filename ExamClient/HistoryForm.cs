@@ -15,6 +15,9 @@ namespace ExamClient
         {
             InitializeComponent();
 
+            // Áp dụng giao diện hiện đại
+            UIHelper.ApplyModernStyle(this);
+
             _userId = userId;
             _student = student;
 

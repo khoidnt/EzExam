@@ -12,6 +12,18 @@ namespace ExamClient
         {
             InitializeComponent();
 
+            // Áp dụng giao diện hiện đại
+            UIHelper.ApplyModernStyle(this);
+            UIHelper.ApplyButtonStyle(btnLogin);
+            UIHelper.ApplyButtonStyle(btnRegSubmit);
+            UIHelper.ApplyButtonStyle(btnForgotSubmit);
+
+            UIHelper.ApplyTextBoxStyle(txtUser);
+            UIHelper.ApplyTextBoxStyle(txtPass);
+            UIHelper.ApplyTextBoxStyle(txtRegUser);
+            UIHelper.ApplyTextBoxStyle(txtRegPass);
+            UIHelper.ApplyTextBoxStyle(txtForgotUser);
+
             grpRegister.Visible = false;
             grpForgot.Visible = false;
 

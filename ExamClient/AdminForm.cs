@@ -23,6 +23,9 @@ namespace ExamClient
         {
             InitializeComponent();
 
+            // Áp dụng giao diện hiện đại
+            UIHelper.ApplyModernStyle(this);
+
             SetupQuestionGrid();
             SetupResultGrid();
             LoadExamsToComboBox();
