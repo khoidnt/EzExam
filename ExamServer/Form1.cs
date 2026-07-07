@@ -16,6 +16,9 @@ namespace ExamServer
         {
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
+
+            // Áp dụng giao diện hiện đại
+            UIHelper.ApplyModernStyle(this);
         }
 
         private void btnStart_Click(object sender, EventArgs e)
