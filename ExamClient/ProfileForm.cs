@@ -16,6 +16,10 @@ namespace ExamClient
         public ProfileForm(int userId)
         {
             InitializeComponent();
+
+            // Áp dụng giao diện hiện đại
+            UIHelper.ApplyModernStyle(this);
+
             _userId = userId;
         }
 

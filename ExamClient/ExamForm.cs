@@ -37,6 +37,9 @@ namespace ExamClient
         {
             InitializeComponent();
 
+            // Áp dụng giao diện hiện đại
+            UIHelper.ApplyModernStyle(this);
+
             _currentUserId = userId;
             _student = student;
 
@@ -62,6 +65,9 @@ namespace ExamClient
             btnStart.Enabled = true;
             btnNext.Text = "Câu tiếp";
             btnSubmit.Visible = false;
+
+            timer1.Stop();
+            totalSeconds = 600;
 
             await LoadExamsAsync();
         }
