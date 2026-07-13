@@ -66,6 +66,9 @@ namespace ExamClient
             btnNext.Text = "Câu tiếp";
             btnSubmit.Visible = false;
 
+            timer1.Stop();
+            totalSeconds = 600;
+
             await LoadExamsAsync();
         }
 
